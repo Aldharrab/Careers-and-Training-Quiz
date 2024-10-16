@@ -92,7 +92,7 @@ function nextQuestion() {
 function showResults() {
     const resultDiv = document.getElementById('result');
     const maxCategory = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
-    resultDiv.innerHTML = `<h2>You are suited for a career in ${maxCategory}!</h2>`;
+    
 
     // Redirect based on the maxCategory
     let redirectPage;
@@ -119,8 +119,7 @@ function showResults() {
     // Redirect after a brief display
     setTimeout(() => {
         window.location.href = redirectPage; // Redirect to the corresponding page
-    }, 3000); // Redirect after 3 seconds
+    }, 1000); // Redirect after 3 seconds
 }
 
 showQuestion();
-

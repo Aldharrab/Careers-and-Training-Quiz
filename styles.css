@@ -22,3 +22,17 @@ body {
 #result {
     margin-top: 20px; /* Spacing for results */
 }
+.option-button {
+    margin: 10px 0; /* Adds space above and below each button */
+    padding: 10px; /* Optional: Adds padding for a better appearance */
+    width: 100%; /* Optional: Makes buttons full-width */
+    border: none; /* Optional: Removes border for a cleaner look */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: #34cceb; /* Optional: Adds background color */
+    color: white; /* Optional: Changes text color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.option-button:hover {
+    background-color: #2ca9d7; /* Optional: Darkens color on hover */
+}
