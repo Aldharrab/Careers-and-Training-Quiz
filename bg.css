@@ -1,96 +1,58 @@
-html {
-    height: 100%;
-  }
-  
- 
-  body {
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on the body */
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+
     background: linear-gradient(to bottom right, #001f3f, #267cd3), 
-                url("../img/bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    backdrop-filter: blur(10px); /* Blur effect */
-    background-color: rgba(0, 0, 50, 0.7); /* Dark blue tint */
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+              url("./bug-hunter-4531114-3754876.png") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(10px); /* Blur effect */
+  background-color: rgba(0, 0, 50, 0.7); /* Dark blue tint */
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-  
-  body:before {
-    content: "";
-    height: 0px;
-    padding: 0px;
-    border: 130em solid #313440;
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    z-index: 2;
-    display: block;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-    animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-  }
-  
-  h1,
-  h2 {
-    font-weight: 500;
-    margin: 0px 0px 5px 0px;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
-  h2 {
-    font-size: 16px;
-  }
-  
-  p {
-    margin: 0px;
-  }
-  
-  .profile-card {
-    background: #2784e1;
-    width: 70px; /* Increased width */
-    height: 70px; /* Increased height */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    overflow: hidden;
-    opacity: 0;
-    margin-top: 70px;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    box-shadow: 0px 3px 6px rgba(236, 7, 7, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
-    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+.profile-card {
+  background: #bfcfdf;
+  width: 300px; /* Adjust width */
+  height: 400px; /* Set a fixed height */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(236, 7, 7, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  overflow-y: auto; /* Enable vertical scrolling inside the card */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  padding: 20px;
 }
-  
-  .profile-card header {
-    width: 179px;
-    height: 280px;
-    padding: 40px 20px 30px 20px;
-    display: inline-block;
-    float: left;
-    border-right: 2px dashed #EEEEEE;
-    background: #FFFFFF;
-    color: #000000;
-    margin-top: 50px;
-    opacity: 0;
-    text-align: center;
-    -webkit-animation: moveIn 1s 3.1s ease forwards;
-    animation: moveIn 1s 3.1s ease forwards;
-  }
-  
-  .profile-card header h1 {
-    color: #2784e1;
-  }
+
+.profile-bio {
+  max-height: 180px; /* Limit height of the bio section */
+  overflow-y: auto; /* Scroll only the bio section if content exceeds */
+  padding: 10px;
+}
+
+.profile-card header {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+.profile-card header h1 {
+  color: #8795a3;
+}
   
   .profile-card header a {
     display: inline-block;
@@ -148,7 +110,7 @@ html {
   
   .profile-social-links li a {
     display: inline-block;
-    color: red;
+    color: rgb(17, 90, 185);
     width: 24px;
     height: 24px;
     padding: 6px;
@@ -264,7 +226,7 @@ html {
   
   @-webkit-keyframes moveUp {
     0% {
-      background: #FFB300;
+      background: #0086ec;
       top: 100%;
     }
     50% {
@@ -278,7 +240,7 @@ html {
   
   @keyframes moveUp {
     0% {
-      background: #FFB300;
+      background: #0195ff;
       top: 100%;
     }
     50% {
@@ -469,3 +431,7 @@ html {
       }
     }
   }
+
+
+
+
