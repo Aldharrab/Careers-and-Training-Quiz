@@ -98,19 +98,19 @@ function showResults() {
     let redirectPage;
     switch (maxCategory) {
         case "Penetration Testing":
-            redirectPage = "penetration_testing.html"; //  HTML page for Penetration Testing
+            redirectPage = "Pt.html"; //  HTML page for Penetration Testing
             break;
         case "Cloud Security":
-            redirectPage = "cloud_security.html"; //  HTML page for Cloud Security
+            redirectPage = "cs.html"; //  HTML page for Cloud Security
             break;
         case "Application Security":
-            redirectPage = "application_security.html"; //  HTML page for Application Security
+            redirectPage = "as.html"; //  HTML page for Application Security
             break;
         case "Operational Security":
-            redirectPage = "operational_security.html"; //  HTML page for Operational Security
+            redirectPage = "os.html"; //  HTML page for Operational Security
             break;
         case "Bug Hunter":
-            redirectPage = "bug_hunter.html"; //  HTML page for Bug Hunter
+            redirectPage = "BugBounty.html"; //  HTML page for Bug Hunter
             break;
         default:
             redirectPage = "default.html"; // Fallback page
