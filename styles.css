@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh; 
     margin: 0;
-    background: linear-gradient(to bottom, #003366, #3399ff); /* Blue gradient background */
+    background-image: url('./img/markus-spiske-iar-afB0QQw-unsplash.jpg');
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -31,11 +31,11 @@ body {
     width: 100%; /* Optional: Makes buttons full-width */
     border: none; /* Optional: Removes border for a cleaner look */
     border-radius: 5px; /* Optional: Adds rounded corners */
-    background-color: #34cceb; /* Optional: Adds background color */
-    color: white; /* Optional: Changes text color */
+    background-color: #2e8b57; /* Forest green background color */
+    color: white; /* Changes text color */
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .option-button:hover {
-    background-color: #2ca9d7; /* Darkens color on hover */
+    background-color: #276749; /* Darker forest green on hover */
 }
