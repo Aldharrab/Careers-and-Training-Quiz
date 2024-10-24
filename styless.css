@@ -275,7 +275,7 @@ body {
     background: linear-gradient(
       to top,
       rgba(134, 214, 243, 0) 0%,
-      rgb(1, 98, 168) 100%
+      rgb(35, 82, 51) 100%
     );
     content: "";
     left: 42px;
@@ -365,8 +365,8 @@ body {
   outline: none;
   background: linear-gradient(
     to right,
-    rgba(83, 200, 239, 0.8) 0%,
-    rgba(81, 106, 204, 0.8) 96%
+    rgba(2, 118, 21, 0.8) 0%,
+    rgba(1, 82, 21, 0.8) 96%
   );
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   color: #fff;
