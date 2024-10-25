@@ -117,7 +117,7 @@ function showResults() {
             redirectPage = "./BugBounty.html"; //  HTML page for Bug Hunter
             break;
         default:
-            redirectPage = "default.html"; // Fallback page
+            redirectPage = "./LackOfAnswer.html"; // Fallback page
     }
 
     // Redirect after a brief display
